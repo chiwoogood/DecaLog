@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="kr.spring.repository.MemberRepository"/>
+    <fullyQualifiedTypeName name="kr.spring.service.MemberService"/>
+</qualifiedTypeNameHistroy>
