@@ -31,7 +31,7 @@
   
 </head>
 <body>
-  
+  <jsp:include page="/WEB-INF/views/header.jsp" />
   <div class="card">
     <div class="card-header">
     	<div class="jumbotron jumbotron-fluid">

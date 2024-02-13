@@ -27,6 +27,9 @@
             <input type="text" name="username" placeholder="ID">
             <input type="password" name="password" placeholder="Password">
             <input type="password" name="passwordConfirm" placeholder="Password Confirm">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="nickname" placeholder="Nickname">
+            <input type="email" name="email" placeholder="Email">
             <label for="remember-check">
                 <a class="underlineHover" href="${cpath}/member/join">Join us</a>
             </label>

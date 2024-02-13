@@ -41,30 +41,31 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
-      <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+	    <div class="container-fluid justify-content-end">
+	        <a class="navbar-brand" href="#">Navbar</a>
+	        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+	            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+	            <ul class="navbar-nav">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="${cpath}/board/list">Home</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="#">Features</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="${cpath}/board/list">Mypage</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="${cpath}/board/list">Other</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBI9g0DRqhc9sRkqTg6et3izuKYo2iJj5b0v4JMcKY9i5fNQd5A1EcPZX" crossorigin="anonymous"></script>
 </body>
 </html>

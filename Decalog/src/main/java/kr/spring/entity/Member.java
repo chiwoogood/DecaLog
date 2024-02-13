@@ -1,5 +1,6 @@
 package kr.spring.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -28,13 +29,18 @@ public class Member {
         return passwordEncoder.matches(rawPassword, this.password);
     }
     
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role = Role.MEMBER; // 기본값으로 Member를 설정합니다.
     
-	@Enumerated(EnumType.STRING) // @Enumerated -> 열거형 (권한이 여러개이기 때문에)
-	private Role role; // 권한정보
-	
+    private String profileURL;
+    
 	private String name;  // 이름
 	
-	private boolean enabled; // 계정 활성화/비활성화 부분
+	private String nickname;
+	
+	private String email;
+	
 	
 }
 

@@ -26,20 +26,7 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- Banner -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Story</h1>
-							<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
-							<p>This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="${cpath}/images/banner.jpg" alt="" />
-						</div>
-					</section>
+
 
 				<!-- Spotlight -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
@@ -82,7 +69,36 @@
 							<img src="images/spotlight03.jpg" alt="" />
 						</div>
 					</section>
-
+					
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Spotlight</h2>
+							<p>This is also a <strong>Spotlight</strong> element, and it's here because this demo would look a bit empty with just one spotlight. Like all spotlights, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight02.jpg" alt="" />
+						</div>
+					</section>
+					
+					
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Spotlight</h2>
+							<p>And yes, this is another <strong>Spotlight</strong> element, and it's also here because I need to fill a bit of space. Naturally, like any other spotlight, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section>	
+					
 				<!-- Gallery -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">

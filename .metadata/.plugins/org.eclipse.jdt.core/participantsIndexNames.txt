@@ -19,6 +19,8 @@ C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\
 \DecaShop\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2727455012.index
 \DecaShop\src\main\resources
+C:\Users\박치우\Desktop\Decalog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1316163398.index
+\Decalog\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3898554150.index
 \DecaShop\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2022414629.index

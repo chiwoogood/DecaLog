@@ -26,7 +26,6 @@ class DecaShopApplicationTests {
 		m.setPassword(passwordEncoder.encode("1234"));
 		m.setName("박치우");
 		m.setRole(Role.MEMBER);
-		m.setEbled(true);
 		memberRepository.save(m);
 		
 	}
