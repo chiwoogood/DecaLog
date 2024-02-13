@@ -7,9 +7,11 @@ import kr.spring.entity.Member;
 
 public interface MemberService {
 	
-	public void join(Member vo);
+	public void join(Member vo, String confirmPassword);
 
-	public void update(Member vo);
+	public void update(Member vo);	
+
+	public boolean login(String username, String password);
 }
 
 

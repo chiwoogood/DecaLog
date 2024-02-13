@@ -19,13 +19,15 @@ public class MemberServiceImpl implements MemberService{
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
-	@Override
-	public void join(Member vo) {
-		String encPw = vo.getPassword();
-		vo.setPassword(passwordEncoder.encode(encPw));
-		memberRepository.save(vo);
-	}
-	
+    @Override
+    public void join(Member vo, String confirmPassword) {
+        if (!vo.getPassword().equals(confirmPassword)) {
+            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+        }
+        vo.setPassword(passwordEncoder.encode(vo.getPassword()));
+        memberRepository.save(vo);
+    }
+    
 	@Override
 	public void update(Member vo) {
 	    Member existingMember = memberRepository.findByUsername(vo.getUsername()).orElse(null);
@@ -39,6 +41,16 @@ public class MemberServiceImpl implements MemberService{
 	        // 기존 멤버 정보가 없는 경우 예외 처리 또는 다른 작업 수행
 	    }
 	}
+	
+	@Override
+	public boolean login(String username, String password) {
+	    Member member = memberRepository.findByUsername(username).orElse(null);
+	    if (member != null) {
+	        return passwordEncoder.matches(password, member.getPassword());
+	    }
+	    return false;
+	}
+	
 }
 
 

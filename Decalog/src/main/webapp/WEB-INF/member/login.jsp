@@ -17,32 +17,20 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<link rel="stylesheet" href="${cpath}/resources/css/login.css">
 
 </head>
 <body>
-	<div class="wrapper fadeInDown">
-	  <div id="formContent">
-	    <!-- Tabs Titles -->
-	
-	    <!-- Icon -->
-	    <div class="fadeIn first">
-	    	<h4>Please sign in</h4>
-	    </div>
-	
-	    <!-- Login Form -->
-	    <form action="${cpath}/member/login" method="post">
-	      <input type="text" id="username" class="fadeIn second" name="username" placeholder="login">
-	      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-	      <input type="submit" class="fadeIn fourth" value="Log In">
-	    </form>
-	
-	    <!-- Remind Passowrd -->
-	    <div id="formFooter">
-	      <a class="underlineHover" href="${cpath}/member/join">아직 회원이 없으시다면?</a>
-	    </div>
-	
-	  </div>
-	</div>
+    <div class="login-wrapper">
+        <h2>Login</h2>
+        <form method="post" action="${cpath}/member/login" id="login-form">
+            <input type="text" name="username" placeholder="ID">
+            <input type="password" name="password" placeholder="Password">
+            <label for="remember-check">
+                <a class="underlineHover" href="${cpath}/member/join">Join us</a>
+            </label>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>

@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Users\박치우\Desktop\Decalog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\131446918.index
+\Decalog\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\133558218.index
 \Decalog\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1316163398.index

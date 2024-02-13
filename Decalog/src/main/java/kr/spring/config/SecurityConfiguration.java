@@ -21,27 +21,25 @@ public class SecurityConfiguration {
 	
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-		
-		http.csrf().disable(); // CSRF인증 토큰 비활성화
-		
-		http.authorizeHttpRequests() // 사용자의 요청을 핸들링
-			.antMatchers("/", "/member/**").permitAll()
-			// "/", "member"하위에 모든 접근을 허용하겠다
-			.antMatchers("/board/**").authenticated()
-			// board로 접근하는 모든 경우는 인증된(로그인한)사용자만 허용한다
-			.and() // 추가
-			.formLogin() // 별도의 로그인 폼을 사용하겠다
-			.loginPage("/member/login") // 로그인 페이지는 member안에 login에서 하겠다
-			.defaultSuccessUrl("/board/list") // 로그인 성공시 board list로 이동하겠다
-			.and() // 추가
-			.logout() // Spring Security에서 제공하는 기본 로그아웃을 사용하겠다
-			.logoutUrl("/member/logout") // 로그아웃 실행하고 싶다면 member/logout으로 요청하겠다
-			.logoutSuccessUrl("/"); // 로그아웃하고 /로 이동하겠다
-		
-		
-		http.userDetailsService(userService);
-		
-		return http.build();
+	    
+	    http.csrf().disable(); // CSRF인증 토큰 비활성화
+	    
+	    http.authorizeHttpRequests() // 사용자의 요청을 핸들링
+	        .antMatchers("/", "/member/**").permitAll() // "/", "/member/**" 하위에 모든 접근을 허용
+	        .antMatchers("/css/**", "/js/**", "/images/**").permitAll() // 정적 리소스에 대한 접근 허용
+	        .antMatchers("/board/**").authenticated() // "/board/**"는 인증된 사용자만 허용
+	        .and() // 추가
+	        .formLogin() // 별도의 로그인 폼을 사용
+	        .loginPage("/member/login") // 로그인 페이지 지정
+	        .defaultSuccessUrl("/board/list") // 로그인 성공 시 이동할 페이지
+	        .and() // 추가
+	        .logout() // 로그아웃 설정
+	        .logoutUrl("/member/logout") // 로그아웃 URL
+	        .logoutSuccessUrl("/"); // 로그아웃 성공 시 이동할 페이지
+	    
+	    http.userDetailsService(userService);
+	    
+	    return http.build();
 	}
 	
 
