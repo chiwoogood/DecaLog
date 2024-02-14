@@ -1,5 +1,6 @@
 package kr.spring.entity;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,11 +15,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.JoinColumn;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
 @NoArgsConstructor
 @ToString
 @Entity
+@Data
 public class BlogComment {
 
     @Id

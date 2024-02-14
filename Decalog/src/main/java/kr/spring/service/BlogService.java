@@ -1,5 +1,5 @@
 package kr.spring.service;
 
-public class BlogService {
+public interface BlogService {
 
 }

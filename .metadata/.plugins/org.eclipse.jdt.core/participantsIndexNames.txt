@@ -7,6 +7,8 @@ C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\
 \Decalog\src\main\resources
 C:\Users\박치우\Desktop\Decalog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1119404309.index
 \Decalog\src\main\resources
+C:\Users\박치우\Desktop\Decalog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2315130268.index
+\Decalog\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1441133911.index
 \Decalog\src\main\resources
 C:\Users\박치우\Desktop\DecaShop\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\247732596.index
