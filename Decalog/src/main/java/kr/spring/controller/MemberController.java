@@ -1,5 +1,7 @@
 package kr.spring.controller;
 
+import java.security.Principal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,12 +59,16 @@ public class MemberController {
 		return "redirect:/board/list";
 	}
 	
-	@GetMapping("/bloglist/{username}")
-	public String blogList(@PathVariable String username, Model model) {
-	    // username을 사용하여 해당 사용자의 블로그 리스트를 조회하는 로직 추가
-	    // 예시: model.addAttribute("blogs", blogService.findBlogsByUsername(username));
-
-	    return "member/blog/list"; // 사용자의 블로그 리스트를 보여줄 뷰 페이지 경로
-	}
-	
+    @GetMapping("/mypage")
+    public String mypage(Principal principal, Model model) {
+        if (principal != null) {
+            String username = principal.getName();
+            Member member = memberService.findMemberByUsername(username);
+            if (member != null) {
+                model.addAttribute("member", member);
+                return "member/mypage"; // 마이페이지 뷰 경로
+            }
+        }
+        return "redirect:/login"; // 로그인하지 않았거나 사용자 정보가 없으면 로그인 페이지로 리다이렉션
+    }
 }

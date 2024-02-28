@@ -57,7 +57,7 @@
 	                    <a class="nav-link" href="#">Features</a>
 	                </li>
 	                <li class="nav-item">
-	                    <a class="nav-link" href="${cpath}/board/list">Mypage</a>
+	                    <a class="nav-link" href="${cpath}/member/mypage">Mypage</a>
 	                </li>
 	                <li class="nav-item">
 	                    <a class="nav-link" href="${cpath}/board/list">Other</a>

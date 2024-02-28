@@ -1,5 +1,9 @@
 package kr.spring.service;
 
-public class BlogCommentService {
 
+import kr.spring.entity.Member;
+
+public interface BlogCommentService {
+
+    public void create(Member vo);
 }

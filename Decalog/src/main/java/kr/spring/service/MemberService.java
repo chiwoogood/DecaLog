@@ -12,6 +12,9 @@ public interface MemberService {
 	public void update(Member vo);	
 
 	public boolean login(String username, String password);
+
+	public Member findMemberByUsername(String username);
+
 }
 
 

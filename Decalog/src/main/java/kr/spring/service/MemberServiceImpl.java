@@ -51,6 +51,11 @@ public class MemberServiceImpl implements MemberService{
 	    return false;
 	}
 	
+    @Override
+    public Member findMemberByUsername(String username) {
+        return memberRepository.findByUsername(username).orElse(null);
+    }
+	
 }
 
 

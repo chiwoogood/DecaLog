@@ -1,5 +1,7 @@
 package kr.spring.service;
 
-public interface BlogService {
+import kr.spring.entity.Member;
 
+public interface BlogService {
+    void create(Member vo);
 }
